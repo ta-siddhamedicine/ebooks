@@ -2,6 +2,19 @@
 <html>
 <head>
 <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
 body {
    background-image: url("front-page-background.jpg") no-repeat center center fixed;
    -webkit-background-size: cover;
@@ -27,7 +40,13 @@ h3 {
 <body>
 
 <h1>Open Source Siddha Medicine </h1>
-<img src="front-page-background.jpg" alt="Flowers in Chania">
+<!---
+<img src="front-page-background.jpg" >
+-->
+<div class="imgbox">
+    <img class="center-fit" src='front-page-background.jpg'>
+</div>
+
 <h2>List of ebooks </h2>
 <ul>
 <li>
